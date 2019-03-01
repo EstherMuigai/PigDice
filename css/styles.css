@@ -1,0 +1,89 @@
+body {
+    background-image: url('https://media1.tenor.com/images/bcd35f9123a819eb6a34f8627e292aca/tenor.gif?itemid=13177468');
+    background-repeat: round;
+    text-align: center;
+}
+
+h1 {
+    text-align:center;
+}
+
+p {
+    text-align: center;
+}
+
+#welcome {
+    background-color: wheat;
+    position: fixed;
+    display: none; 
+    width: 100%; 
+    height: 100%;
+    top: 0;
+    z-index: 2;
+    opacity:0.9;
+    cursor: pointer;
+    -moz-border-radius: 20%;
+    -webkit-border-radius: 20%;
+    border-radius: 20%;
+    border-top-left-radius: 30%;
+}
+ #logo {
+     height:50%;
+ }
+
+#proceed {
+    cursor: pointer;
+}
+
+#proceed:hover {
+    color: rgb(209, 85, 105);
+}
+
+#welcome:hover {
+    opacity: 1;
+    background-image: url('https://i.gifer.com/6ob.gif');
+}
+
+#dice {
+    background-image: url('http://bestanimations.com/Games/Dice/rolling-dice-gif-3.gif');
+    position: fixed;
+
+}
+
+#board {
+    margin-top: 5%;
+    margin-left: 10%;
+    height: 1000px;
+    width: 1000px;
+
+}
+    
+#board1 {
+    height: 50%;
+    width: 40%;
+    margin-top: 5%;
+    background-color: rgb(240, 131, 154);
+    -moz-border-radius: 30%;
+    -webkit-border-radius: 37%;
+    border-radius: 37%;
+}
+
+#board2 {
+    height: 50%;
+    width: 40%;
+    margin-top: 9%;
+    background-color: grey;
+    -moz-border-radius: 30%;
+    -webkit-border-radius: 37%;
+    border-radius: 37%;
+}
+
+#button1 {
+    width: 20%;
+    margin-left: 40%;
+}
+
+#button2 {
+    width: 20%;
+    margin-left: 40%;
+}
