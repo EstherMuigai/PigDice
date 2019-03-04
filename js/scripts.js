@@ -1,3 +1,5 @@
+
+  
 //USER INTERFACE LOGIC
 $("document").ready (function(){
     $("div#welcome").fadeIn("slow",function(){
@@ -6,6 +8,7 @@ $("document").ready (function(){
      $("div#welcome").click(function(){
         $("div#rolldice").show();
         $("button#hold").show();
+        $("button#newgame").show();
          $("div#welcome").fadeOut("slow",function(){
              $("div#welcome").hide(); 
          });
@@ -14,6 +17,7 @@ $("document").ready (function(){
         event.preventDefault();
         $("div#rolldice").hide().show(500);
         $("div#dice").show().delay(200).hide(500);
+        Player = player2;
         alternatePlayer(Player);
     });
 });
@@ -39,9 +43,11 @@ Player.prototype.startRolling =function () {
 
 Player.prototype.displayPoints = function (number) {
     if (Player == player1) {
+        $("ul#pointsA").empty();
         $("ul#pointsA").append("<li><span class='pointsA'>" +number+ "</span></li>");
     }
     else if (Player == player2) {
+        $("ul#pointsB").empty();
         $("ul#pointsB").append("<li><span class='pointsA'>" +number+ "</span></li>");
     }
 }
@@ -81,6 +87,7 @@ function enforceRule (pointss,element1,element2,element3) {
         while (element2.length > 0) {
             element2.pop();
         }
+        $("div#roll1").show().delay(1500).hide(500);
         $(element3).empty();
         $(element3).reset()[0];
         $(element).empty();

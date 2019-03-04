@@ -11,17 +11,55 @@
         <body>
             <div class="container-fluid no padding">
                 <div class = "row" id="welcome">
-                    <img src="http://www.animatedimages.org/data/media/293/animated-pig-image-0012.gif" alt="logo" id="logo">
-                    <h1>WELCOME TO PIG DICE!</h1></br>
-                    <p id="proceed">Click here to proceed to the game</p></br>
+                    <div class="col-md-6" id="game">
+                        <img src="http://www.animatedimages.org/data/media/293/animated-pig-image-0012.gif" alt="logo" id="logo">
+                        <h1>WELCOME TO PIG DICE!</h1></br>
+                        <p id="proceed">Click anywhere to proceed to the game</p></br>
+                    </div>
+                    <div class="col-md-6" id="game1">
+                            <h1>RULES</h1></br>
+                            <ul id="rules">
+                                <li>1.A player will get the chance to roll the dice</li>
+                                <li>2.The player can view their points each time they roll the dice at the bottom of their console</li>
+                                <li>3.Each player's score is displayed at the center of their console</li>
+                                <li>4.If a player rolls a 1, their score is cleared and the chance goes to the other player</li>
+                                <li>5.If a player holds, their score is held and the other player gets to play</li>
+                                <li>The first player to reach a score of 100 is the winner</li>
+                            </ul></br>
+                    </div>
                 </div>
+                <div class = "row" id="roll1">
+                        OOPS! You just rolled a 1
+                </div>
+                <div class = "row" id="rolldice">
+                    LET'S ROLL!
+                </div>
+                <div class = "row" id="dice">
+                    <img id="thedice" src="http://bestanimations.com/Games/Dice/rolling-dice-gif-3.gif">
+                </div>
+                <form>
+                    <button class="form-group" id="newgame">START</button>
+                    <button class="form-group" id="hold">HOLD</button>
+                </form>
                 <div class="row" id="board">
+                    <div class = "row" id="heldscore">
+                    </div>
                     <div class="col-md-6" id="board1">
-                        <ul>Points</ul>
+                        <div class="scoreAB">PLAYER 1
+                            <ul id="scoreA"></ul>
+                        </div>
+                        <div class="pointsAB" id="current">CURRENT
+                            <ul id="pointsA"></ul>
+                        </div>
                     </div>
                     <div class="col-md-6" id="board2">
-                        <ul>Points</ul>
-                    </div>
+                        <div class="scoreAB">PLAYER 2
+                            <ul id="scoreB"></ul>
+                        </div>
+                        <div class="pointsAB" id="current2">CURRENT
+                            <ul id="pointsB"></ul>
+                        </div>
+                    </div>       
                 </div>
             </div>
         </body>
