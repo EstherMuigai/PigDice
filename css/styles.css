@@ -2,6 +2,8 @@ body {
     background-image: url('https://media1.tenor.com/images/bcd35f9123a819eb6a34f8627e292aca/tenor.gif?itemid=13177468');
     background-repeat: round;
     text-align: center;
+    overflow: hidden;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 h1 {
@@ -10,6 +12,14 @@ h1 {
 
 p {
     text-align: center;
+}
+
+ul{
+    list-style-type:none;
+}
+
+.row {
+    font-size: 30px;
 }
 
 #welcome {
@@ -26,7 +36,20 @@ p {
     -webkit-border-radius: 20%;
     border-radius: 20%;
     border-top-left-radius: 30%;
+    font-size: 20px;
 }
+
+#game {
+    float: left;
+    margin-top: 10%;
+}
+
+#game1 {
+    float: right;
+    margin-top: 15%;
+    font-style: italic;
+}
+
  #logo {
      height:50%;
  }
@@ -45,23 +68,104 @@ p {
 }
 
 #dice {
-    background-image: url('http://bestanimations.com/Games/Dice/rolling-dice-gif-3.gif');
+    margin-left: 44%;
+    margin-top: 16%;
     position: fixed;
-
+    z-index: 2;
+    display: none;
 }
 
+#rolldice {
+    margin-left: 36%;
+    margin-top: 20%;
+    position: fixed;
+    z-index: 2;
+    display: none;
+    width: 20%;
+    height: 20%;
+    border: 1px;
+    border-color: black;
+}
+
+#roll1 {
+    margin-left: 38%;
+    margin-top: 8%;
+    width: 20%;
+    height: 20%;
+    background-color: white;
+    position: fixed;
+    z-index: 3;
+    opacity: 0.9;
+    display:none;
+}
+
+#rolldice:hover {
+    cursor: pointer;
+    color: white;
+    font-style: oblique;
+    font-size: 40px;
+    margin-left: 38%;
+}
+
+#thedice {
+    height: 150px;
+    width: 100px;
+}
+
+#hold {
+    margin-left: -8%;
+    margin-top: 28%;
+    position: fixed;
+    z-index: 2;
+    display: none;
+    width: 10%;
+    height: 10%;
+    font-size: 20px;
+    background-color: rgba(28, 194, 245, 0.973);
+    opacity: 0.8;
+    border: 0;
+    -moz-border-radius: 20%;
+    -webkit-border-radius: 20%;
+    border-radius: 20%;
+}
+
+#hold:hover{
+    background-color: white;
+}
+
+#newgame {
+    margin-left: -8%;
+    margin-top: 10%;
+    position: fixed;
+    z-index: 2;
+    display: none;
+    width: 10%;
+    height: 10%;
+    font-size: 20px;
+    background-color: rgba(28, 194, 245, 0.973);
+    opacity: 0.8;
+    border: 0;
+    -moz-border-radius: 20%;
+    -webkit-border-radius: 20%;
+    border-radius: 20%;
+}
+
+#newgame:hover{
+    background-color: white;
+}
+
+
 #board {
-    margin-top: 5%;
+    margin-top: 1%;
     margin-left: 10%;
     height: 1000px;
     width: 1000px;
-
 }
     
 #board1 {
-    height: 50%;
-    width: 40%;
-    margin-top: 5%;
+    height: 60%;
+    width: 60%;
+    margin-top: 1%;
     background-color: rgb(240, 131, 154);
     -moz-border-radius: 30%;
     -webkit-border-radius: 37%;
@@ -69,9 +173,9 @@ p {
 }
 
 #board2 {
-    height: 50%;
-    width: 40%;
-    margin-top: 9%;
+    height: 60%;
+    width: 60%;
+    margin-top: 1%;
     background-color: grey;
     -moz-border-radius: 30%;
     -webkit-border-radius: 37%;
@@ -86,4 +190,56 @@ p {
 #button2 {
     width: 20%;
     margin-left: 40%;
+}
+
+#current {
+    background-color: grey;
+    -moz-border-radius: 30%;
+    -webkit-border-radius: 37%;
+    border-radius: 37%;
+    width: 40%;
+    height: 20%;
+    margin-top: 30%;
+    margin-left: 30%;
+    font-size: 15px;
+}
+
+#current2 {
+    background-color: rgb(240, 131, 154);
+    -moz-border-radius: 30%;
+    -webkit-border-radius: 37%;
+    border-radius: 37%;
+    width: 40%;
+    height: 20%;
+    margin-top: 30%;
+    margin-left: 30%;
+    font-size: 15px;
+}
+
+#pointsA {
+    font-size: 50px;
+    margin-left: -20%;
+    color: white;
+}
+
+#pointsB {
+    font-size: 50px;
+    margin-left: -20%;
+    color: white;
+}
+
+#scoreA {
+    font-size: 100px;
+    margin-top: 25%;
+    margin-bottom: 0;
+    margin-left: -3%;
+    color: grey;
+}
+
+#scoreB {
+    font-size: 100px;
+    margin-top: 25%;
+    margin-bottom: 0;
+    margin-left: -3%;
+    color: rgb(240, 131, 154);
 }
