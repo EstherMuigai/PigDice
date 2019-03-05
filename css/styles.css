@@ -75,18 +75,6 @@ ul{
     display: none;
 }
 
-#rolldice {
-    margin-left: 36%;
-    margin-top: 20%;
-    position: fixed;
-    z-index: 2;
-    display: none;
-    width: 20%;
-    height: 20%;
-    border: 1px;
-    border-color: black;
-}
-
 #roll1 {
     margin-left: 38%;
     margin-top: 8%;
@@ -99,20 +87,75 @@ ul{
     display:none;
 }
 
-#rolldice:hover {
-    cursor: pointer;
-    color: white;
-    font-style: oblique;
-    font-size: 40px;
-    margin-left: 38%;
-}
-
 #thedice {
     height: 150px;
     width: 100px;
 }
 
+#p1{
+    margin-left: -27%;
+    margin-top: 25%;
+    position: fixed;
+    z-index: 2;
+    display: none;
+    width: 10%;
+    height: 10%;
+    font-size: 20px;
+    background-color: rgba(28, 194, 245, 0.973);
+    opacity: 0.8;
+    border: 0;
+    -moz-border-radius: 20%;
+    -webkit-border-radius: 20%;
+    border-radius: 20%;
+}
+
+#p1:hover{
+    background-color: white;
+}
+
+#p2{
+    margin-left: 11%;
+    margin-top: 25%;
+    position: fixed;
+    z-index: 3;
+    display: none;
+    width: 10%;
+    height: 10%;
+    font-size: 20px;
+    background-color: rgba(28, 194, 245, 0.973);
+    opacity: 0.8;
+    border: 0;
+    -moz-border-radius: 20%;
+    -webkit-border-radius: 20%;
+    border-radius: 20%;
+}
+
+#p2:hover{
+    background-color: white;
+}
+
 #hold {
+    margin-left: -8%;
+    margin-top: 28%;
+    position: fixed;
+    z-index: 2;
+    display: none;
+    width: 10%;
+    height: 10%;
+    font-size: 20px;
+    background-color: rgba(28, 194, 245, 0.973);
+    opacity: 0.8;
+    border: 0;
+    -moz-border-radius: 20%;
+    -webkit-border-radius: 20%;
+    border-radius: 20%;
+}
+
+#hold:hover{
+    background-color: white;
+}
+
+#hold2 {
     margin-left: -8%;
     margin-top: 28%;
     position: fixed;
