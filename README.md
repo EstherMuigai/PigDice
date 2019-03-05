@@ -41,3 +41,8 @@ Linked the JQuery
 
 **Support and contact details**\
 If you encounter any issues don't hesitate to contact me on this link https://github.com/EstherMuigai/
+
+
+**LICENSE**\
+Copyright (c) 2019 EstherMuigai
+https://github.com/EstherMuigai/PigDice/blob/master/LICENSE
